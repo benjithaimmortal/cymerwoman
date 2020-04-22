@@ -6,6 +6,11 @@ title: Monica and Benji
 layout: default
 ---
 
+<section class="title">
+  <h1>Monica and Benjamin</h1> 
+</section>
 
-# Monica and Benjamin
+<section class="nav">
+  <a href="{% link us.md %}" class="link">us</a>
+</section>
 

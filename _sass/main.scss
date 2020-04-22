@@ -1,6 +1,76 @@
+.title {
+  min-height: 100vh;
+  position: relative;
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+
+
+
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: lamar-pen, sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 34px;
+}
+
+
+
+
+// things you made, positioned very delicately
+.heart {
+  background-color: #f38885;
+  height: 30px;
+  margin: 0 10px;
+  position: absolute;
+  width: 30px;
+	&:before, &:after {
+		content: "";
+		background-color: #f38885;
+		border-radius: 50%;
+		height: 30px;
+		position: absolute;
+		width: 30px;
+	}
+	&:before {
+		top: -15px;
+		left: 0;
+	}
+	&:after {
+		left: 15px;
+		top: 0;
+	}
+}
+.first {
+	top: 22%; left: 78%;
+	transform:
+		translate(-78%, -22%)
+		rotate(-55deg);
+}
+.second {
+	top: 80%; left: 88%;
+	transform:
+		translate(-88%, -80%)
+		rotate(-30deg);
+}
+.third {
+	top: 50%; left: 90%;
+	transform:
+		translate(-90%, -50%)
+		rotate(-70deg);
+}
+
+.title {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
 }
