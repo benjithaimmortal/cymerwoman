@@ -60,13 +60,15 @@
 }
 
 
-
+html, body {
+	height: 100%; width: 100%;
+}
 *>* {
 	font-family: ff-nexus-mix, sans-serif;
 	color: #323232;
 	font-size: 40px;
+	margin: 0 auto;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: lamar-pen, sans-serif;
@@ -116,6 +118,27 @@ a {
 		left: 15px;
 		top: 0;
 	}
+
+	// heart buttons
+	&.left, &.right {
+		cursor: pointer;
+		top: 50%;
+		z-index: 99;
+	}
+	&.left {
+		left: 5%;
+		transform:
+			scale(.7)
+			translate(-50%, -5%)
+			rotate(45deg);
+	}
+	&.right {
+		right: 5%;
+		transform:
+			scale(.7)
+			translate(-50%, 5%)
+			rotate(-135deg);
+	}
 }
 .first {
 	top: 22%; left: 78%;
@@ -144,4 +167,35 @@ a {
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
+}
+
+.blackground {
+	background: black;
+	height: 100%;
+}
+.slick-track {
+	max-height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.slick-initialized .slick-slide {
+	height: 100vh;
+	background: center / contain no-repeat;
+}
+.slick-initialized .slick-slide.slide.flex {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	.mini {
+		width: 49%;
+		margin-right: 2%;
+		height: 100%;
+		background: center / contain no-repeat;
+		&:last-of-type{margin-right: unset;}
+	}
+}
+
+#theframe {
+	// display: none;
 }
