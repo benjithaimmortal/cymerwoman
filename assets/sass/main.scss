@@ -122,21 +122,20 @@ a {
 	// heart buttons
 	&.left, &.right {
 		cursor: pointer;
-		padding: 20px;
 		top: 50%;
 		z-index: 99;
 	}
 	&.left {
 		left: 5%;
 		transform:
-			scale(.7)
+			scale(1)
 			translate(-50%, -5%)
 			rotate(45deg);
 	}
 	&.right {
 		right: 5%;
 		transform:
-			scale(.7)
+			scale(1)
 			translate(-50%, 5%)
 			rotate(-135deg);
 	}
@@ -195,4 +194,11 @@ a {
 		background: center / contain no-repeat;
 		&:last-of-type{margin-right: unset;}
 	}
+}
+
+
+
+@media (max-width: 500px) {
+
+h1, h2, h3, h4, h5, h6 { font-size: 34px;}
 }
