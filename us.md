@@ -1,13 +1,9 @@
 ---
 title: Us
 permalink: us
-layout: default
----
-
-# They made a statue of us
-
+layout: slider
 ---
 
 
-# and put it on a mountain top
+![an image](https://link)bloop
 

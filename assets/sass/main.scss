@@ -20,7 +20,44 @@
 	}
 }
 
-
+@keyframes beat {
+	0% 	 {
+		transform:
+			translate(-90%, -50%)
+			rotate(-70deg)
+			scale(1);
+	}
+	1%  {
+		transform:
+			translate(-90%, -50%)
+			rotate(-70deg)
+			scale(1.2);
+	}
+	2%  {
+		transform:
+			translate(-90%, -50%)
+			rotate(-70deg)
+			scale(1);
+	}
+	4%  {
+		transform:
+			translate(-90%, -50%)
+			rotate(-70deg)
+			scale(1);
+	}
+	5%  {
+		transform:
+			translate(-90%, -50%)
+			rotate(-70deg)
+			scale(1.2);
+	}
+	6% {
+		transform:
+			translate(-90%, -50%)
+			rotate(-70deg)
+			scale(1);
+	}
+}
 
 
 
@@ -93,10 +130,14 @@ a {
 		rotate(-30deg);
 }
 .third {
-	top: 50%; left: 90%;
+	top: 50%; left: 90%;	
 	transform:
 		translate(-90%, -50%)
 		rotate(-70deg);
+	animation-name: beat;
+	animation-duration: 7s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
 }
 
 .title {
