@@ -1,0 +1,106 @@
+.title {
+  min-height: 100vh;
+  position: relative;
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-40%, -50%);
+	}
+	.arra {
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%, -70%);
+		height: 80px;
+		transition: ease transform .8s;
+		&:hover {
+			transform: translate(-50%, -70%) rotate(-360deg);
+		}
+	}
+}
+
+
+
+
+
+*>* {
+	font-family: ff-nexus-mix, sans-serif;
+	color: #323232;
+	font-size: 40px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: lamar-pen, sans-serif;
+	text-align: left;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 44px;
+	width: calc(90% - 150px);
+	margin-right: 150px;
+}
+
+footer {
+	font-family: ff-nexus-mix, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 10px;
+	a {text-decoration: none; color: black; font-size: 10px;}
+}
+
+a {
+	color: rgb(101, 101, 101);
+	text-decoration-color: #f38885;
+}
+
+
+
+// things you made, positioned very delicately
+.heart {
+  background-color: #f38885;
+  height: 30px;
+  margin: 0 10px;
+  position: fixed;
+  width: 30px;
+	&:before, &:after {
+		content: "";
+		background-color: #f38885;
+		border-radius: 50%;
+		height: 30px;
+		position: absolute;
+		width: 30px;
+	}
+	&:before {
+		top: -15px;
+		left: 0;
+	}
+	&:after {
+		left: 15px;
+		top: 0;
+	}
+}
+.first {
+	top: 22%; left: 78%;
+	transform:
+		translate(-78%, -22%)
+		rotate(-55deg);
+}
+.second {
+	top: 80%; left: 88%;
+	transform:
+		translate(-88%, -80%)
+		rotate(-30deg);
+}
+.third {
+	top: 50%; left: 90%;
+	transform:
+		translate(-90%, -50%)
+		rotate(-70deg);
+}
+
+.title {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}

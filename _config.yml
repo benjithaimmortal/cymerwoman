@@ -34,7 +34,7 @@ plugins:
   # - jekyll-seo-tag
 
 sass:
-  sass_dir: _sass
+  sass_dir: assets/sass
   style: compressed
 
 # Exclude from processing.
